@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.0-alpha.2 (2025-05-12)
+
+Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/eesuhn/coingecko-typescript/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
+
+### Bug Fixes
+
+* **mcp:** explicitly include zod and zod-to-json-schema in package.json ([2b5895c](https://github.com/eesuhn/coingecko-typescript/commit/2b5895c98ba09f0c8ba66f3edb224a1551500ccf))
+
+
+### Chores
+
+* **internal:** codegen related update ([2175645](https://github.com/eesuhn/coingecko-typescript/commit/2175645c83c160f547e190952ca3468ef16510ad))
+* **tests:** use node 22 for CI tests ([dcb864e](https://github.com/eesuhn/coingecko-typescript/commit/dcb864e11e0fd3f65f6f9092c4e03700671ebdca))
+
 ## 0.1.0-alpha.1 (2025-05-11)
 
 Full Changelog: [v0.0.1-alpha.0...v0.1.0-alpha.1](https://github.com/eesuhn/coingecko-typescript/compare/v0.0.1-alpha.0...v0.1.0-alpha.1)
