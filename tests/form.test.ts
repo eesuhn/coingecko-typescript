@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'coingecko/internal/uploads';
-import { toFile } from 'coingecko/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'coingecko-typescript-test/internal/uploads';
+import { toFile } from 'coingecko-typescript-test/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

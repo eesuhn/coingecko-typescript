@@ -4,7 +4,7 @@ const parentPkgJson = require('../../../package.json');
 
 for (const dep in pkgJson.dependencies) {
   // ensure we point to NPM instead of a local directory
-  if (dep === 'coingecko') {
+  if (dep === 'coingecko-typescript-test') {
     pkgJson.dependencies[dep] = '^' + parentPkgJson.version;
   }
 }

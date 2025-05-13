@@ -2,7 +2,7 @@
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
 import type { Metadata } from '../../';
-import Coingecko from 'coingecko';
+import Coingecko from 'coingecko-typescript-test';
 
 export const metadata: Metadata = {
   resource: 'onchain.pools',
