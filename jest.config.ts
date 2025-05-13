@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^coingecko$': '<rootDir>/src/index.ts',
-    '^coingecko/(.*)$': '<rootDir>/src/$1',
+    '^coingecko-typescript-test$': '<rootDir>/src/index.ts',
+    '^coingecko-typescript-test/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

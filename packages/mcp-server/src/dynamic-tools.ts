@@ -1,4 +1,4 @@
-import Coingecko from 'coingecko';
+import Coingecko from 'coingecko-typescript-test';
 import { Endpoint } from './tools';
 import { zodToJsonSchema } from 'zod-to-json-schema';
 import { z } from 'zod';
