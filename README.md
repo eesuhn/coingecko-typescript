@@ -28,7 +28,7 @@ const client = new Coingecko({
 });
 
 async function main() {
-  const response = await client.simple.getPrice({ vs_currencies: 'usd', ids: 'bitcoin' });
+  const response = await client.simple.getPrice({ vs_currencies: 'usd', ids: 'bitcoin,ethereum,solana' });
 
   console.log(response.last_updated_at);
 }
@@ -50,7 +50,7 @@ const client = new Coingecko({
 });
 
 async function main() {
-  const params: Coingecko.SimpleGetPriceParams = { vs_currencies: 'usd', ids: 'bitcoin' };
+  const params: Coingecko.SimpleGetPriceParams = { vs_currencies: 'usd', ids: 'bitcoin,ethereum,solana' };
   const response: Coingecko.SimpleGetPriceResponse = await client.simple.getPrice(params);
 }
 
@@ -69,7 +69,7 @@ a subclass of `APIError` will be thrown:
 ```ts
 async function main() {
   const response = await client.simple
-    .getPrice({ vs_currencies: 'usd', ids: 'bitcoin' })
+    .getPrice({ vs_currencies: 'usd', ids: 'bitcoin,ethereum,solana' })
     .catch(async (err) => {
       if (err instanceof Coingecko.APIError) {
         console.log(err.status); // 400
@@ -113,7 +113,7 @@ const client = new Coingecko({
 });
 
 // Or, configure per-request:
-await client.simple.getPrice({ vs_currencies: 'usd', ids: 'bitcoin' }, {
+await client.simple.getPrice({ vs_currencies: 'usd', ids: 'bitcoin,ethereum,solana' }, {
   maxRetries: 5,
 });
 ```
@@ -130,7 +130,7 @@ const client = new Coingecko({
 });
 
 // Override per-request:
-await client.simple.getPrice({ vs_currencies: 'usd', ids: 'bitcoin' }, {
+await client.simple.getPrice({ vs_currencies: 'usd', ids: 'bitcoin,ethereum,solana' }, {
   timeout: 5 * 1000,
 });
 ```
@@ -153,12 +153,14 @@ Unlike `.asResponse()` this method consumes the body, returning once it is parse
 ```ts
 const client = new Coingecko();
 
-const response = await client.simple.getPrice({ vs_currencies: 'usd', ids: 'bitcoin' }).asResponse();
+const response = await client.simple
+  .getPrice({ vs_currencies: 'usd', ids: 'bitcoin,ethereum,solana' })
+  .asResponse();
 console.log(response.headers.get('X-My-Header'));
 console.log(response.statusText); // access the underlying Response object
 
 const { data: response, response: raw } = await client.simple
-  .getPrice({ vs_currencies: 'usd', ids: 'bitcoin' })
+  .getPrice({ vs_currencies: 'usd', ids: 'bitcoin,ethereum,solana' })
   .withResponse();
 console.log(raw.headers.get('X-My-Header'));
 console.log(response.last_updated_at);
