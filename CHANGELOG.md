@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.4 (2025-05-13)
+
+Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/eesuhn/coingecko-typescript/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
+
+### Chores
+
+* **package:** remove engines ([a19c763](https://github.com/eesuhn/coingecko-typescript/commit/a19c76382e4f2da9d09357ea7c23d1e9bddef711))
+
 ## 0.1.0-alpha.3 (2025-05-12)
 
 Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/eesuhn/coingecko-typescript/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)

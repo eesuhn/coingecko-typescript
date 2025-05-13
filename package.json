@@ -1,6 +1,6 @@
 {
   "name": "coingecko",
-  "version": "0.1.0-alpha.3",
+  "version": "0.1.0-alpha.4",
   "description": "The official TypeScript library for the Coingecko API",
   "author": "Coingecko <>",
   "types": "dist/index.d.ts",
@@ -68,8 +68,5 @@
       "import": "./dist/*.mjs",
       "require": "./dist/*.js"
     }
-  },
-  "engines": {
-    "node": ">= 20"
   }
 }
