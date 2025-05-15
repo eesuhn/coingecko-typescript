@@ -11,7 +11,7 @@ You can run the MCP Server directly via `npx`:
 ```sh
 export COINGECKO_PRO_API_KEY="My Pro API Key"
 export COINGECKO_DEMO_API_KEY="My Demo API Key"
-npx -y coingecko-mcp@latest
+npx -y coingecko-mcp-test@latest
 ```
 
 ### Via MCP Client
@@ -26,7 +26,7 @@ For clients with a configuration JSON, it might look something like this:
   "mcpServers": {
     "coingecko_typescript_test_api": {
       "command": "npx",
-      "args": ["-y", "coingecko-mcp", "--client=claude", "--tools=dynamic"],
+      "args": ["-y", "coingecko-mcp-test", "--client=claude", "--tools=dynamic"],
       "env": {
         "COINGECKO_PRO_API_KEY": "My Pro API Key",
         "COINGECKO_DEMO_API_KEY": "My Demo API Key"
@@ -132,10 +132,10 @@ over time, you can manually enable or disable certain capabilities:
 
 ```js
 // Import the server, generated endpoints, or the init function
-import { server, endpoints, init } from "coingecko-mcp/server";
+import { server, endpoints, init } from "coingecko-mcp-test/server";
 
 // import a specific tool
-import getKey from "coingecko-mcp/tools/key/get-key";
+import getKey from "coingecko-mcp-test/tools/key/get-key";
 
 // initialize the server and all endpoints
 init({ server, endpoints });
