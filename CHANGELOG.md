@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.7 (2025-05-15)
+
+Full Changelog: [v0.1.0-alpha.6...v0.1.0-alpha.7](https://github.com/eesuhn/coingecko-typescript/compare/v0.1.0-alpha.6...v0.1.0-alpha.7)
+
+### Features
+
+* **api:** update via SDK Studio ([f19e579](https://github.com/eesuhn/coingecko-typescript/commit/f19e5795dbea2f5eed99bba31a4ab50f4fb9ff88))
+
 ## 0.1.0-alpha.6 (2025-05-13)
 
 Full Changelog: [v0.1.0-alpha.5...v0.1.0-alpha.6](https://github.com/eesuhn/coingecko-typescript/compare/v0.1.0-alpha.5...v0.1.0-alpha.6)
